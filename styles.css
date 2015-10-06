@@ -1,0 +1,68 @@
+body {
+  text-align: center;
+}
+
+.bub-bub {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+}
+
+.bub {
+  transform: scale(0);
+  transition: transform 0.2s ease-in 0.1s;
+  background: #1069cb;
+  width: 120px;
+  height: 120px;
+  margin: 24px auto;
+  border-radius: 50%;
+}
+
+.eye {
+  position: absolute;
+  top: 32px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.eye:nth-child(1) {
+  left: 32px;
+}
+
+.eye:nth-child(2) {
+  right: 32px;
+}
+
+.mouth {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  width: 60px;
+  height: 25px;
+  margin-left: -30px;
+  border-radius: 100% 100% 0 0;
+  box-shadow: 0 -1px 0 0 #fff;
+}
+
+.animate .bub {
+  transform: scale(1);
+}
+
+#btn {
+  transition: all 0.2s ease-in;
+  outline: none;
+  width: 120px;
+  border: 1px solid #1069cb;
+  background: none;
+  padding: .5em 0;
+  color: #1069cb;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#btn:hover {
+  border-color: #faeb56;
+}
